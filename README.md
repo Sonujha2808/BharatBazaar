@@ -58,7 +58,7 @@ BharatBazaaar/
 └── index.js
 
 
- 
+ ---
 # 📚 Technologies Used
 React.js
 
