@@ -8,6 +8,7 @@ import userIcon2 from "../../Assets/search.gif";
 import logo from "../../Assets/logo.png";
 import { useUser } from "../UserContext"; // Import context
 import { toast } from "react-toastify"; // Import toast
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
@@ -57,14 +58,16 @@ const Header = () => {
 
         <FaBars className="hamburger" onClick={toggleMenu} />
 
-        <nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-          <a href="#" onClick={closeMenu}>Home</a>
-          <a href="#" onClick={closeMenu}>Category</a>
-          <a href="#" onClick={closeMenu}>About Us</a>
-          <a href="#" onClick={closeMenu}>FAQ</a>
-          <a href="#" onClick={closeMenu}>Blog</a>
-          <a href="#" onClick={closeMenu}>Contact</a>
-        </nav>
+        
+<nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+  <Link to="/" onClick={closeMenu}>Home</Link>
+  <Link to="/" onClick={closeMenu}>Category</Link>
+  <Link to="/about" onClick={closeMenu}>About Us</Link>
+  <Link to="/faq" onClick={closeMenu}>FAQ</Link>
+  <Link to="/blog" onClick={closeMenu}>Blog</Link>
+  <Link to="/contact" onClick={closeMenu}>Contact</Link>
+</nav>
+
 
         <div className="header-icons">
           <img src={userIcon2} alt="Search" className="icon user-gif" />
