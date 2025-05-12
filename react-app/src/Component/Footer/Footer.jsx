@@ -58,21 +58,21 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Get to Know Us</h3>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">News & Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">How To Shop</a></li>
+            <li><a href="/somepage">About Us</a></li>
+            <li><a href="/somepage">News & Blog</a></li>
+            <li><a href="/somepage">Careers</a></li>
+            <li><a href="/somepage">Contact Us</a></li>
+            <li><a href="/somepage">How To Shop</a></li>
           </ul>
         </div>
         <div className="footer-section">
           <h3>Orders & Returns</h3>
           <ul>
-            <li><a href="#">Shipping & Delivery</a></li>
-            <li><a href="#">Return & Exchange</a></li>
-            <li><a href="#">Track Order</a></li>
-            <li><a href="#">Selling Tips</a></li>
-            <li><a href="#">Payment</a></li>
+            <li><a href="/somepage">Shipping & Delivery</a></li>
+            <li><a href="/somepage">Return & Exchange</a></li>
+            <li><a href="/somepage">Track Order</a></li>
+            <li><a href="/somepage">Selling Tips</a></li>
+            <li><a href="/somepage">Payment</a></li>
           </ul>
         </div>
         <div className="footer-section">
@@ -87,9 +87,9 @@ const Footer = () => {
       <hr className="divider" />
       <div className="footer-bottom">
         <div className="policies">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Shipping Policy</a>
+          <a href="/somepage">Privacy Policy</a>
+          <a href="/somepage">Terms of Use</a>
+          <a href="/somepage">Shipping Policy</a>
         </div>
         <div className="payment-icons">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
