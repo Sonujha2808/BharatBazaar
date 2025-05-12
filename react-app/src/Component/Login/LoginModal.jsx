@@ -19,7 +19,7 @@ const LoginModal = ({ closeModal }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `http://localhost:5000/api/auth/${isSignup ? "signup" : "login"}`;
+      const url = `https://bharatbazaar-45ug.onrender.com/api/auth/${isSignup ? "signup" : "login"}`;
       const payload = isSignup ? { name, email, password } : { email, password };
 
       const response = await axios.post(url, payload);

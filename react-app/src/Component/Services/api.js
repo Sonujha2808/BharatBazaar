@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/products";
+const API_URL = "https://bharatbazaar-45ug.onrender.com/api/products";
 
 // ✅ Upload product (Admin)
 export const uploadProduct = async (product) => {

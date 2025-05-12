@@ -19,7 +19,7 @@ const ProductList = () => {
   const [wishlist, setWishlist] = useState(loadFromStorage("wishlist"));
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/products/all")
+    axios.get("https://bharatbazaar-45ug.onrender.com/api/products/all")
       .then((res) => {
         console.log("✅ Products received:", res.data);
         setProducts(res.data.products || []); // res.data.products expected

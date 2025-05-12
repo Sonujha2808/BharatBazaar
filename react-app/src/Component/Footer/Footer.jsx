@@ -16,7 +16,7 @@ const Footer = () => {
     }
     try {
       // await axios.post("/api/subscribe", { email });
-      await axios.post("http://localhost:5000/api/subscribe", { email });
+      await axios.post("https://bharatbazaar-45ug.onrender.com/api/subscribe", { email });
 
       toast.success("Thank you for subscribing! Please check your email.");
       setEmail("");
