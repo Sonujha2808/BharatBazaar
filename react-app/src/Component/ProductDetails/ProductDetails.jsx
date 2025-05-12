@@ -24,7 +24,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     fetchProduct();
-  }, [id]);
+  }, [fetchProduct]);
 
   if (error) {
     return <p>{error}</p>;
