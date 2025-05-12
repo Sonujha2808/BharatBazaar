@@ -58,28 +58,8 @@ BharatBazaaar/
 └── index.js
 
 
- 🛠️ Installation and Setup Instructions
-Clone the Repository:
-
-bash
-
-git clone https://github.com/your-username/BharatBazaaar.git
-cd BharatBazaaar
-Install Dependencies:
-
-bash
-
-npm install
-Run the App:
-
-bash
-
-npm start
-Open http://localhost:3000 to view it in your browser.
-
-
-
-📚 Technologies Used
+ 
+# 📚 Technologies Used
 React.js
 
 React Router
@@ -90,7 +70,7 @@ React Toastify
 
 CSS3
 
-🚀 Future Enhancements
+# 🚀 Future Enhancements
 👤 User Authentication (Login/Signup)
 
 📦 Admin Product Uploads connected to Database
@@ -101,13 +81,15 @@ CSS3
 
 🛠️ Backend Integration with Node.js, Express, and MongoDB
 
-🙏 Acknowledgments
+# 🙏 Acknowledgments
 Create React App
 
 React Toastify
 
 Framer Motion
 
-📜 License
+# 📜 License
 This project is licensed under the MIT License.
+
+
 
