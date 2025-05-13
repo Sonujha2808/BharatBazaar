@@ -46,7 +46,7 @@ const PaymentPage = () => {
 
     try {
       // 1. Create order from backend
-      const { data } = await axios.post('http://localhost:5000/api/payment/create-order', { amount: amountToPay });
+      const { data } = await axios.post('https://bharatbazaar-45ug.onrender.com/api/payment/create-order', { amount: amountToPay });
 
       // 2. Open Razorpay checkout
       const options = {
