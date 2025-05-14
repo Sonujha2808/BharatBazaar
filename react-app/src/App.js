@@ -100,7 +100,7 @@ import LoginModal from "./Component/Login/LoginModal";
 function Layout() {
   const location = useLocation();
   // const [showModal, setShowModal] = useState(false);
-  //const [_, setShowModal] = useState(false); // if only setter is used
+  const [showModal, setShowModal] = useState(false); // if only setter is used
 
   useEffect(() => {
     if (!localStorage.getItem("user")) {
