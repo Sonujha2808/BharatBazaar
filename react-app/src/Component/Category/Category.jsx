@@ -56,7 +56,7 @@ const CategorySlider = () => {
     ],
   };
   return (
-    <div className="category-slider" id="Cat">
+    <div className="category-slider" id="category-section">
       <h2>Browse by Category</h2>
       <Slider {...settings}>
         {categories.map((category, index) => (

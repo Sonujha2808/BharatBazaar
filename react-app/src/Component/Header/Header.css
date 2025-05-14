@@ -40,6 +40,7 @@
 
 .nav-links a:hover {
   color: #007bff;
+  cursor: pointer;
 }
 
 /* HEADER ICONS */
@@ -166,6 +167,9 @@
   margin-left: auto;
 }
 
+
+
+
 /* RESPONSIVE MEDIA QUERIES */
 @media (max-width: 768px) {
   .header {
@@ -195,8 +199,16 @@
   }
 
   .nav-links.active {
-    display: flex;
-  }
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* adjust based on header height */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000; /* important */
+}
+
 
   .hamburger {
     display: block;

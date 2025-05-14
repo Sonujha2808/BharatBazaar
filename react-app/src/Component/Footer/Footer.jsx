@@ -27,7 +27,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer" id="about-us">
       {/* Newsletter Section */}
       <div className="newsletter">
         <h2>Join Us & Get Updates</h2>

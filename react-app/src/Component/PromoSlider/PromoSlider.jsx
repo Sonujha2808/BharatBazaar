@@ -1,7 +1,11 @@
+
+
 import React from "react";
 import Slider from "react-slick";
-import "./PromoSlider.css"; // We'll style it here
-import banner1 from "../../Assets/headPhone.png"; // Replace with your images
+import { useNavigate } from "react-router-dom"; // ✅
+import "./PromoSlider.css";
+
+import banner1 from "../../Assets/headPhone.png";
 import banner2 from "../../Assets/Phone.png";
 import banner3 from "../../Assets/Watch.png";
 
@@ -27,10 +31,11 @@ const slides = [
     image: banner3,
     cta: "Buy Now",
   },
-  // Add 1–2 more slides as needed
 ];
 
 const PromoSlider = () => {
+  const navigate = useNavigate(); // ✅
+
   const settings = {
     dots: true,
     infinite: true,
@@ -52,7 +57,20 @@ const PromoSlider = () => {
                 <h4>Make in India Product</h4>
                 <h2>{slide.title}</h2>
                 <p>{slide.description}</p>
-                <button>{slide.cta}</button>
+                <button
+  onClick={() => {
+    if (slide.id === 1) {
+      window.location.href = "/category/headphone";
+    } else if (slide.id === 2) {
+      window.location.href = "/category/phone";
+    } else if (slide.id === 3) {
+      window.location.href = "/category/watch";
+    }
+  }}
+>
+  {slide.cta}
+</button>
+
               </div>
               <img src={slide.image} alt={slide.title} />
             </div>

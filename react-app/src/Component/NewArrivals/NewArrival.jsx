@@ -16,11 +16,12 @@ const NewArrivals = () => {
           <img src={phone} alt="Samsung Galaxy New" />
           <h3>Samsung Galaxy S25</h3>
           <p>₹80,000</p>
-          <button className="shop-now-btn">Shop Now</button>
+          <button className="shop-now-btn" onClick={() => {
+            window.location.href = "/category/phone";}}>Shop Now</button>
         </div>
 
-        <div className="small-products">
-  <div className="small-product-card">
+  <div className="small-products" onClick={() =>{window.location.href="/category/headphone"}}>
+    <div className="small-product-card">
     <img src={headphone} alt="Wireless Headphones" />
     <h4>Wireless Headphones</h4>
     <p>₹1,500</p>

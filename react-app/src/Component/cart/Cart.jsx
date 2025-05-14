@@ -14,7 +14,7 @@ const Cart = () => {
       const stored = JSON.parse(localStorage.getItem("cart")) || [];
       setCartItems(stored);
     }
-  }, [user]);
+  }, []);
 
   const updateLocalAndServerCart = (updatedCart) => {
     setCartItems(updatedCart);

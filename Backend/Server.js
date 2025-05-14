@@ -17,7 +17,11 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true // Allow cookies and credentials
+}));
 
 // API Routes
 app.use("/api/cart", cartRoutes);

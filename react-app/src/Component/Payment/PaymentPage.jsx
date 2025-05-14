@@ -157,95 +157,134 @@ const styles = {
   },
 };
 
+
 const paymentStyles = `
-   .step {
-     display: flex;
-     justify-content: space-between;
-     margin-bottom: 2rem;
-     font-size: 0.9rem;
-     font-weight: 500;
-     color: #6b7280;
-   }
-   .step .active {
-     color: #2563eb;
-   }
-   .payment-container {
-     display: flex;
-     gap: 2rem;
-   }
-   .payment-methods {
-     width: 30%;
-     border: 1px solid #e5e7eb;
-     border-radius: 0.5rem;
-     padding: 1rem;
-     background-color: #f9fafb;
-   }
-   .payment-methods button {
-     width: 100%;
-     background: none;
-     border: none;
-     padding: 0.8rem;
-     text-align: left;
-     border-bottom: 1px solid #e5e7eb;
-     cursor: pointer;
-     font-weight: 500;
-     transition: background 0.3s;
-     display: flex;
-     align-items: center;
-     gap: 10px;
-   }
-   .payment-methods button:hover, .payment-methods .active {
-     background-color: #e0e7ff;
-   }
-   .payment-form {
-     flex-grow: 1;
-     border: 1px solid #e5e7eb;
-     border-radius: 0.5rem;
-     padding: 1.5rem;
-   }
-   .amount-summary {
-     width: 25%;
-     border: 1px solid #e5e7eb;
-     border-radius: 0.5rem;
-     padding: 1.5rem;
-     height: fit-content;
-     background-color: #f9fafb;
-   }
-   input {
-     width: 100%;
-     padding: 0.75rem 1rem;
-     border: 1px solid #ccc;
-     border-radius: 0.375rem;
-     outline: none;
-     margin-bottom: 1rem;
-   }
-   input:focus {
-     border-color: #2563eb;
-     box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.4);
-   }
-   .flex {
-     display: flex;
-     gap: 1rem;
-   }
-   .half {
-    width: 50%;
-   }
-   .pay-button {
-     width: 100%;
-     background-color: #2563eb;
-     color: white;
-     padding: 0.75rem;
-     border: none;
-     border-radius: 0.375rem;
-     font-weight: 600;
-     font-size: 1rem;
-     margin-top: 1rem;
-     cursor: pointer;
-     transition: background-color 0.3s;
-   }
-   .pay-button:hover {
-     background-color: #1d4ed8;
-   }
+  .step {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6b7280;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .step .active {
+    color: #2563eb;
+  }
+
+  .payment-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .payment-methods,
+  .payment-form,
+  .amount-summary {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background-color: #f9fafb;
+  }
+
+  .payment-methods {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .payment-methods button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .payment-methods button:hover,
+  .payment-methods .active {
+    background-color: #e0e7ff;
+  }
+
+  .payment-form {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .amount-summary {
+    width: 100%;
+    max-width: 300px;
+    height: fit-content;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.375rem;
+    outline: none;
+    margin-bottom: 1rem;
+  }
+
+  input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.4);
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .half {
+    width: 100%;
+  }
+
+  .pay-button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .pay-button:hover {
+    background-color: #1d4ed8;
+  }
+
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .payment-methods {
+      width: 30%;
+    }
+
+    .payment-form {
+      width: 40%;
+    }
+
+    .amount-summary {
+      width: 25%;
+    }
+
+    .half {
+      width: 48%;
+    }
+  }
 `;
 
 export default PaymentPage;
