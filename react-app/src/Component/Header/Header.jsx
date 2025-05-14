@@ -22,8 +22,8 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
-  const [showCartDropdown, setShowCartDropdown] = useState(false);
-  const [showWishlistDropdown, setShowWishlistDropdown] = useState(false);
+  const [_, setShowCartDropdown] = useState(false);
+  const [__, setShowWishlistDropdown] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const { user, setUser } = useUser(); // Use context
@@ -69,7 +69,7 @@ const Header = () => {
         <FaBars className="hamburger" onClick={toggleMenu} />
 
         <nav className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-          <a href="#" onClick={() => { closeMenu(); navigate("/"); }}>Home</a>
+          <a href="" onClick={() => { closeMenu(); navigate("/"); }}>Home</a>
           <ScrollLink to="category-section"  smooth={true}  duration={500}
             onClick={() => {
             closeMenu();
@@ -78,8 +78,8 @@ const Header = () => {
            }, 100);}}>Category
            </ScrollLink>
 
-        <a href="#" onClick={() => { closeMenu(); navigate("/about"); }}>About Us</a>
-        <a href="#" onClick={() => { closeMenu(); navigate("/faq"); }}>FAQ</a>
+        <a href="/coming" onClick={() => { closeMenu(); navigate("/about"); }}>About Us</a>
+        <a href="/coming" onClick={() => { closeMenu(); navigate("/faq"); }}>FAQ</a>
         <Link to="/admin" onClick={closeMenu}>Admin</Link>
         <ScrollLink to="footer-section" smooth={true}
           duration={500} onClick={() => {    closeMenu();
