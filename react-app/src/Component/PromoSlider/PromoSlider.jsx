@@ -2,7 +2,7 @@
 
 import React from "react";
 import Slider from "react-slick";
-import { useNavigate } from "react-router-dom"; // ✅
+//import { useNavigate } from "react-router-dom"; // ✅
 import "./PromoSlider.css";
 
 import banner1 from "../../Assets/headPhone.png";
@@ -34,7 +34,7 @@ const slides = [
 ];
 
 const PromoSlider = () => {
-  const navigate = useNavigate(); // ✅
+ // const navigate = useNavigate(); // ✅
 
   const settings = {
     dots: true,

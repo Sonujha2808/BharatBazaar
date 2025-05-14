@@ -22,8 +22,8 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
-  const [_, setShowCartDropdown] = useState(false);
-  const [__, setShowWishlistDropdown] = useState(false);
+  const [showCartDropdown, setShowCartDropdown] = useState(false);
+  const [showWishlistDropdown, setShowWishlistDropdown] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const { user, setUser } = useUser(); // Use context
