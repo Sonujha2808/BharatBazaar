@@ -15,9 +15,7 @@
 }
 .product-info-section {
   max-width: 500px;
-  width: 100%; /* Ensure it takes full width on smaller screens */
-  word-wrap: break-word; /* Break long words */
-  overflow-wrap: break-word; /* Modern equivalent */
+  
 }
 
 .product-description {
@@ -25,8 +23,8 @@
   margin-bottom: 1.5rem;
   line-height: 1.6;
   max-width: 100%;
-  white-space: pre-wrap; /* Preserve line breaks and wrap text */
-  overflow: visible; /* Make sure overflow isn't clipped */
+  /*white-space: pre-wrap; /* Preserve line breaks and wrap text */
+ /* overflow: visible; /* Make sure overflow isn't clipped */
 }
 
 
