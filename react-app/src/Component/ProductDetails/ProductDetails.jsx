@@ -66,9 +66,11 @@
 
 
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+// import { useParams, useNavigate } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import "./ProductDetails.css";
-import { toast, ToastContainer } from "react-toastify";
+// import { toast, ToastContainer } from "react-toastify";
+ import { toast} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ProductDetails = () => {
